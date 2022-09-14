@@ -1,10 +1,51 @@
----
-title: 探索
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ART NFT - 探索</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  <body>
+    <header class="bg-primary w-full py-4 lg:py-0 lg:fixed lg:border-b-1 lg:border-black z-10">
+  <div class="container">
+    <div class="flex items-center justify-between">
+            <a href="/" class="bg-logo bg-center bg-no-repeat bg-cover w-21 h-4.5 lg:w-48 lg:h-10"></a>
+            <div class="hidden lg:flex flex-1 h-full items-center justify-start px-12 py-10 border-r-1 border-black">
+        <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="search-input w-full h-6 border-none bg-transparent text-base leading-6 p-0 mr-6">
+        <i class="search-post-btn fas fa-search text-2xl leading-normal h-6 cursor-pointer"></i>
+      </div>
+      <div class="hidden lg:flex items-center w-3/12">
+        <a href="/discover.html" class="hidden lg:block text-base leading-6 text-center font-bold border-r-1  border-black px-12 py-10">探索</a>
+        <a href="#" class="hidden lg:block text-base leading-6 text-center font-bold border-r-1 border-black px-12 py-10">市值</a>
+        <i class="hidden lg:block fas fa-wallet text-2xl leading-6 text-black text-right pl-10 py-10"></i>
+      </div>
+      <div class="nav-sm-item-wrapper flex justify-between items-center lg:hidden">
+        <i class="hidden search-cancel-btn fas fa-chevron-left mr-4 cursor-pointer"></i>
+        <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="search-input-1 hidden w-full border-none bg-transparent text-sm p-0">
+        <div class="">
+          <i class="search-input-btn fas fa-search text-lg leading-4 mr-6 cursor-pointer"></i>
+          <i class="hidden search-post-btn-1 fas fa-search text-lg leading-4 cursor-pointer"></i>
+          <i class="menu-btn fas fa-bars text-lg leading-4 cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="hidden nav-sm bg-transparent absolute w-full z-10">
+  <div class="container bg-white border-y-1 border-black pb-6">
+    <a href="/discover.html" class="block text-lg-1 font-bold text-center border-b-1 border-black py-6">探索</a>
+    <a href="#" class="block text-lg-1 font-bold text-center py-6">市值</a>
+    <a href="#" class="block bg-secondary text-white text-lg-1 text-center border-1 border-black py-3">連結錢包</a>
+  </div>
+  <div class="nav-sm-mask h-screen bg-black opacity-60"></div>
+</nav>
+    <main class="bg-primary">
+      
 <section class="pb-1 lg:pt-36 border-b-4 border-black -z-10" >
     <div class="border-b-1 border-black">
         <div class="container">
@@ -229,3 +270,13 @@ current: index
         </div>
     </div>
 </section>
+    </main>
+    <footer class="bg-primary">
+  <p class="py-6 text-center">© ART NFT. All Rights Reserved</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
