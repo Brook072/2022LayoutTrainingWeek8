@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Noto Sans TC', 'Squada One','Paytone One', sans-serif;
+  }
+};
+
+@layer components {
+  .more-btn {
+    @apply relative font-squada text-lg py-2 px-12 after:block after:absolute after:w-0 after:h-0 after:border-solid after:border-t-0 after:border-r-0 after:border-b-16 after:border-l-16 after:border-t-transparent after:border-x-transparent after:border-b-secondary after:bottom-0 after:right-0 hover:text-white hover:bg-secondary hover:after:border-b-black;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 0px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  background: #E6553B;
+}
+
+.recommend-title{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+@media screen and (min-width:1440px) {
+  .swiper-slide.swiper-slide-active{
+    width:50%;
+  }
+
+  .artist-pic{
+    height: 262px;
+  }
+
+  .swiper-slide-active .artist-pic{
+    height: 439px;
+  }
+
+  .swiper-slide{
+    width:25%;
+  }
+  .swiper-slide-prev,.swiper-slide-next{
+    @apply grayscale
+  }
+  .swiper-slide-prev p,.swiper-slide-next p,.swiper-slide-prev .more-btn,.swiper-slide-next .more-btn{
+    @apply hidden
+  }
+}
